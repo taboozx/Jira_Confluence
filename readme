@@ -1,0 +1,11 @@
+#в коре проекта надо создать файлик "config.py" с содержимым
+где NAME - имя, например 'Stanislav.Gubanov',
+'Password' - доменный пароль
+
+import requests
+from requests.auth import HTTPBasicAuth
+from requests.exceptions import HTTPError
+import json
+
+NAME = "NAME"
+auth = HTTPBasicAuth(NAME, 'Password')
